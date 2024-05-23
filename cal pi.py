@@ -18,3 +18,25 @@ while 1 :
         OutC += 1
     if InC + OutC % 573647 :
     print(((InC / (InC + OutC)) * 4), str(InC +OutC))
+
+
+"""
+from decimal import Decimal, getcontext
+getcontext().prec = 10000000
+#how many pi u need
+pie = Decimal("0")
+tt = Decimal("0.1")
+t = Decimal("0")
+for i in range(16901960) :
+#nlog(n) (* 2 for must acc)
+    tt = pie
+    pie = Decimal(str((Decimal("1")/Decimal("16")**t)*((Decimal("4")/(Decimal("8")*t+Decimal("1"))) - (Decimal("2")/(Decimal("8")*t+Decimal("4"))) - (Decimal("1")/(Decimal("8")*t+Decimal("5"))) - (Decimal("1")/(Decimal("8")*t+Decimal("6"))))))
+    pie = pie + tt
+    t += 1
+    if i % 156  == 0 :
+        print(i / 16901960)
+print(pie, t)
+
+#way 2 in quit
+
+"""
