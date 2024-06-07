@@ -37,6 +37,6 @@ for i in range(16901960) :
         print(i / 16901960)
 print(pie, t)
 
-#way 2 in quit
+#way 2 in quiter
 
 """
